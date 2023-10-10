@@ -15,6 +15,9 @@ Model: The CNN model is designed with two convolutional layers followed by max-p
 - matplotlib
 - pandas
 
+## Training 
+
+The model was initially trained for 11 epochs, but it was observed that the test loss started increasing after the 4th epoch. To mitigate overfitting, the model was retrained for 3 epochs, which resulted in improved performance.
 
 ## Contributing
 If you'd like to contribute to this project, please follow these steps:
