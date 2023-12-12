@@ -16,6 +16,10 @@ Model: The CNN model is designed with two convolutional layers followed by max-p
 - pandas
 - Numpy
 
+
+## Pre-processing
+Pixel Values was scaled to values between o and 1 and then standardization done using mean and std
+
 ## Training 
 
 The model was built using two convolutional layers of 12 and 24 filter kernels respectively and two max pooling. 20% dropped out to prevent overfittting before sending to a fully connected layer. Adam optimizer was used for back propagation using cross entropy loss as loss criteria.  Training over 10 epochs yielded an optimal result. Accuracy was used as evaluation metric and confusion matrix plotted for visualization
