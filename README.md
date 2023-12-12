@@ -14,16 +14,10 @@ Model: The CNN model is designed with two convolutional layers followed by max-p
 - torchvision
 - matplotlib
 - pandas
+- Numpy
 
 ## Training 
 
-The model was initially trained for 11 epochs, but it was observed that the test loss started increasing after the 4th epoch. To mitigate overfitting, the model was retrained for 3 epochs, which resulted in improved performance.
+The model was built using two convolutional layers of 12 and 24 filter kernels respectively and two max pooling. 20% dropped out to prevent overfittting before sending to a fully connected layer. Adam optimizer was used for back propagation using cross entropy loss as loss criteria.  Training over 10 epochs yielded an optimal result. Accuracy was used as evaluation metric and confusion matrix plotted for visualization
 
-## Contributing
-If you'd like to contribute to this project, please follow these steps:
-
-  1.Fork the repository.
-  2. Create a new branch for your feature or bug fix.
-  3. Make your changes and open a pull request.
-  4. Your pull request will be reviewed, and once approved, it will be merged.
 
